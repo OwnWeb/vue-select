@@ -830,6 +830,8 @@
           } else {
             this.mutableValue = option
           }
+        } else if(this.multiple) {
+          this.deselect(option)
         }
 
         this.onAfterSelect(option)
